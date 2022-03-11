@@ -43,7 +43,7 @@ endif
 # Include Caravel Makefile Targets
 .PHONY: % : check-caravel
 %:
-	export CARAVEL_ROOT=$(CARAVEL_ROOT) && $(MAKE) -f $(CARAVEL_ROOT)/Makefile $@
+	$(MAKE) -f $(CARAVEL_ROOT)/Makefile $@
 
 .PHONY: install
 install:
